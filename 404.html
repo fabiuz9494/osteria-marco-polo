@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Senza questo file qualsiasi indirizzo storto risponde "va tutto bene" e
+     mostra la home: per una persona è spaesante, per Google sono pagine
+     fantasma. -->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, follow">
+<title>Pagina non trovata — Osteria Marco Polo</title>
+<meta name="description" content="La pagina cercata non esiste. Torna alla home dell'Osteria Marco Polo, in via Garibaldi 27 ad Alassio, oppure chiama lo 0182 642082.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23100C0A'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23C4813F'%3EMP%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#100C0A">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;min-height:100svh;
+  background:#100C0A;color:#F0EAE1;
+  font-family:Georgia,"Times New Roman",serif;
+  display:flex;align-items:center;justify-content:center;
+  padding:32px 24px;text-align:center;
+}
+.dentro{max-width:44ch}
+.marchio{width:min(300px,72vw);height:auto;margin-bottom:34px}
+h1{font-size:clamp(28px,6vw,42px);margin:0 0 14px;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0 0 26px;line-height:1.7;color:rgba(240,234,225,.68);text-wrap:pretty}
+.tasti{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+a{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:48px;padding:13px 26px;border-radius:2px;
+  font-family:"Trebuchet MS",Arial,sans-serif;font-size:14px;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;text-decoration:none;
+}
+.pieno{background:#C4813F;color:#100C0A}
+.vuoto{border:1px solid rgba(240,234,225,.3);color:#F0EAE1}
+</style>
+</head>
+<body>
+  <div class="dentro">
+    <img src="img/insegna.png" alt="Osteria Marco Polo" class="marchio" width="624" height="420">
+    <h1>Questa pagina non c'è</h1>
+    <p>L'indirizzo è&nbsp;sbagliato o&nbsp;la&nbsp;pagina è&nbsp;stata spostata. Il&nbsp;menù, gli&nbsp;orari e&nbsp;il&nbsp;numero per&nbsp;prenotare sono tutti sulla&nbsp;home.</p>
+    <div class="tasti">
+      <a href="/" class="pieno">Torna alla home</a>
+      <a href="tel:+390182642082" class="vuoto">0182 642082</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- BOZZA: si apre col link, ma resta fuori dai risultati di ricerca finche'
+     il titolare non l'ha vista e non ha detto di si'. Quando dice di si':
+     si toglie questa riga e si manda l'indirizzo a Search Console. -->
+<meta name="robots" content="noindex, follow">
+
+<!-- Anteprima quando il link viene mandato su WhatsApp, Facebook, ecc.
+     Le misure e il tipo dell'immagine sono dichiarati apposta: senza di loro
+     WhatsApp deve scaricare il file per capire che forma ha, e se ci mette
+     troppo mostra il link nudo. L'indirizzo dell'immagine va SEMPRE per
+     intero (https://...), mai relativo. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Osteria Marco Polo">
+<meta property="og:title" content="Osteria Marco Polo &mdash; Alassio, dal 1985">
+<meta property="og:description" content="In via Garibaldi 27, ad Alassio. Il men&ugrave; di agosto, gli orari e il numero per prenotare il tavolo.">
+<meta property="og:image" content="https://fabiuz9494.github.io/osteria-marco-polo/img/og.jpg">
+<meta property="og:image:secure_url" content="https://fabiuz9494.github.io/osteria-marco-polo/img/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="L'insegna dell'Osteria Marco Polo nella sala, con l'indirizzo e il numero di telefono">
+<meta property="og:url" content="https://fabiuz9494.github.io/osteria-marco-polo/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://fabiuz9494.github.io/osteria-marco-polo/img/og.jpg">
+<meta name="twitter:image:alt" content="L'insegna dell'Osteria Marco Polo nella sala, con l'indirizzo e il numero di telefono">
+<link rel="canonical" href="https://fabiuz9494.github.io/osteria-marco-polo/">
+<!-- icona della scheda del browser: il monogramma MP dell'insegna -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23100C0A'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23C4813F'%3EMP%3C/text%3E%3C/svg%3E">
+<title>Osteria Marco Polo · Ristorante ad Alassio</title>
+<meta name="description" content="Osteria Marco Polo, in via Garibaldi 27 ad Alassio dal 1985. Il menù di agosto, gli orari e il numero per prenotare il tavolo: 0182 642082.">
+<meta name="theme-color" content="#100C0A">
+
+<!-- ==========================================================================
+     OSTERIA MARCO POLO — Via Giuseppe Garibaldi 27, Alassio (SV)
+     Bozza costruita sul modello "ristorante" di Insegna, 17/08/2026.
+
+     DA DOVE VENGONO I CONTENUTI
+       - menù, prezzi, orari, telefono, indirizzo, voto: dalla carta di agosto
+         dell'osteria e dalla sua scheda Google. Copiati, non riscritti.
+       - foto: ritagli dagli scatti della scheda Google. Bastano per far vedere
+         la bozza, NON per il sito vero: massimo ~500 px di lato.
+       - il titolare non ha ancora parlato: dove servono le sue parole c'è un
+         commento MODIFICA QUI, e quel pezzo resta fuori.
+
+     PRIMA DI ANDARE ONLINE SUL SERIO
+       1) togliere <meta name="robots" content="noindex"> qui sotto
+       2) foto vere (sue o fatte da Fabio) al posto di quelle in img/
+       3) le tre recensioni di esempio → tre vere prese da Google
+       4) partita IVA e ragione sociale nel footer
+     ========================================================================== -->
+
+
+<style>
+/* ---------- CARATTERI ----------
+   Stanno nella cartella font/ di questo sito: il browser di chi visita
+   non contatta Google, quindi il suo indirizzo non esce di qui.
+   Per cambiarli servono i file nuovi in font/ e queste righe. */
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('font/big-shoulders-display-400-latin-ext-4c517c.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('font/big-shoulders-display-400-latin-8a3351.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('font/big-shoulders-display-500-latin-ext-4c517c.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('font/big-shoulders-display-500-latin-8a3351.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('font/big-shoulders-display-600-latin-ext-4c517c.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('font/big-shoulders-display-600-latin-8a3351.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('font/big-shoulders-display-700-latin-ext-4c517c.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('font/big-shoulders-display-700-latin-8a3351.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('font/big-shoulders-display-800-latin-ext-4c517c.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('font/big-shoulders-display-800-latin-8a3351.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('font/big-shoulders-display-900-latin-ext-4c517c.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('font/big-shoulders-display-900-latin-8a3351.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('font/lora-400-italic-latin-ext-aa7184.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('font/lora-400-italic-latin-440ea4.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('font/lora-500-italic-latin-ext-aa7184.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('font/lora-500-italic-latin-440ea4.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('font/lora-400-latin-ext-b047e3.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('font/lora-400-latin-1ace0d.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('font/lora-500-latin-ext-b047e3.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('font/lora-500-latin-1ace0d.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('font/lora-600-latin-ext-b047e3.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('font/lora-600-latin-1ace0d.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('font/lora-700-latin-ext-b047e3.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('font/lora-700-latin-1ace0d.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ============ 1. PERSONALIZZA I COLORI QUI ============ */
+:root{
+  /* Colori presi dall'insegna vera: la lavagna nera, la cornice di legno
+     (#A4683D campionato sul file) e il gesso bianco della scritta. */
+  --night:#100C0A;              /* nero della lavagna dell'insegna */
+  --night-2:#1A1310;            /* pannelli/fasce su sfondo nero */
+  --night-3:#291E17;            /* bordi e hover, ancora più chiaro */
+  --bottle:#22382C;             /* verde — dettagli, bordi */
+  --wine:#3A1A12;               /* bruno scuro — fascia recensioni */
+  --wine-2:#6B3520;             /* bruno acceso — dettagli sulla fascia */
+  --gold:#C4813F;               /* legno della cornice, schiarito per leggerlo sul nero */
+  --gold-lt:#E0A263;            /* legno chiaro — hover / highlight */
+  --gold-deep:#8A5526;          /* legno scuro — stesso accento sulla carta chiara */
+  --cream:#F0EAE1;              /* gesso: testo chiaro su sfondo scuro */
+  --cream-soft:rgba(240,234,225,.64);
+  --line:rgba(240,234,225,.14);
+  --paper:#F1EADC;              /* "carta menù" chiara, fasce Menù dispari */
+  --paper-2:#E6DAC6;            /* "carta menù" chiara, fasce Menù pari */
+  --ink:#221913;                /* testo scuro sulla carta */
+  --ink-soft:#5A473A;
+
+  --f-display:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;
+  --f-body:"Lora",Georgia,"Times New Roman",serif;
+
+  --pad:clamp(20px,5vw,80px);
+  --maxw:1320px;
+}
+/* ====================================================== */
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overflow-x:clip}
+body{
+  margin:0;background:var(--night);color:var(--cream);
+  font-family:var(--f-body);font-weight:400;font-size:clamp(15px,1.05vw,17px);
+  line-height:1.7;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{margin:0;font-family:var(--f-display);font-weight:700;line-height:.92;letter-spacing:-.01em;text-transform:uppercase}
+
+/* Qui c'era una «vignetta calda»: un velo scuro fisso sopra TUTTA la pagina
+   (z-index 9999, quindi anche sopra i tasti in basso e la testata). Tolto il
+   17/08/2026 perché faceva tre danni:
+   - sul telefono la barra dell'indirizzo che si apre e si chiude cambia
+     l'altezza dello schermo, e un velo fisso si allunga insieme a lei: mentre
+     si scorre sembra una banda scura che sale e riscende;
+   - stava sopra i due tasti in basso e ne spegneva il colore — il tasto che
+     porta i soldi non deve essere smorzato da una decorazione;
+   - sulla carta chiara del menù lasciava una velatura grigia in basso.
+   Se un giorno serve l'effetto candela, va messo DENTRO le sezioni scure
+   (position:absolute nella fascia), mai fisso sopra la pagina. */
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--pad)}
+.eyebrow{
+  font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;
+  color:var(--gold);display:flex;align-items:center;gap:12px;font-family:var(--f-body);
+}
+/* rombo, non filetto: un trattino è un segno da modulo (regola 43).
+   Quadrato ruotato, non un carattere speciale: resta nitido a ogni
+   ingrandimento e non dipende da quale font è arrivato. */
+.eyebrow::before{content:"";width:7px;height:7px;background:var(--gold);transform:rotate(45deg);flex:none}
+
+/* ---------- reveal on scroll ---------- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- foto reali: riempiono un contenitore che ha GIÀ un'altezza propria
+   (aspect-ratio sul contenitore, mai sull'immagine insieme a height:100%) ---------- */
+.foto{
+  width:100%;height:100%;display:block;object-fit:cover;
+  filter:brightness(.93) saturate(1.07) contrast(1.05);
+}
+
+/* ================= NAV ================= */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  transition:background .45s ease,border-color .45s ease,backdrop-filter .45s;
+  border-bottom:1px solid transparent;
+}
+header.stuck{background:rgba(19,14,11,.9);-webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:78px}
+/* Il nome sta sopra la foto dell'apertura, quindi il bagliore non va sulle
+   lettere ma INTORNO: le lettere restano chiare (regola 8) e il caldo è un
+   alone. Tre strati: uno stretto e scuro che stacca dalla foto, due larghi
+   color oro chiaro che fanno la luce. Niente colore acceso sul testo — su una
+   foto luminosa un neon oro sparirebbe. */
+/* La misura è fluida per un motivo misurato, non per gusto: a 25px il nome è
+   larga 201px, e su uno schermo da 360 fra riempimenti, spazio e tasto del
+   numero ne restano 178 — il nome andava a capo e la barra cresceva da 78 a
+   109px. Così sotto i ~410px scende quel tanto che basta a stare su una riga,
+   e resta comunque più grande dei 22px di prima. */
+.brand{
+  font-family:var(--f-display);font-size:clamp(22px,6.1vw,25px);letter-spacing:.035em;font-weight:800;
+  text-transform:uppercase;color:#FCF8F1;
+  text-shadow:0 1px 2px rgba(0,0,0,.9), 0 0 14px rgba(224,162,99,.5), 0 0 34px rgba(224,162,99,.26);
+}
+.brand small{
+  font-family:var(--f-body);font-style:italic;font-size:12.5px;letter-spacing:.06em;
+  text-transform:none;display:block;color:var(--gold-lt);margin-top:3px;font-weight:500;
+  text-shadow:0 1px 2px rgba(0,0,0,.9), 0 0 12px rgba(224,162,99,.34);
+}
+/* Le voci del menu ci sono solo da 901px in su. Alone dimezzato rispetto al
+   nome: si devono leggere meglio senza rubargli la scena. */
+.nav-links{display:flex;gap:26px;font-size:15px;letter-spacing:.03em;font-family:var(--f-body)}
+.nav-links a{position:relative;padding-block:4px;color:#F6F0E7;
+  text-shadow:0 1px 2px rgba(0,0,0,.85), 0 0 12px rgba(224,162,99,.3)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold);transition:width .35s cubic-bezier(.2,.7,.2,1)}
+.nav-links a:hover::after{width:100%}
+@media(max-width:900px){.nav-links{display:none}}
+/* La testata sta fissa in cima ed è alta 78 px: senza questo i link portano la
+   sezione a filo schermo e la barra le mangia la prima riga. Serviva già prima
+   sul telefono, e ora che il menù respira meno vale anche da computer. */
+main section[id]{scroll-margin-top:88px}
+
+.btn{
+  display:inline-flex;align-items:center;gap:9px;border:0;cursor:pointer;
+  font-family:var(--f-display);font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:14px 26px;border-radius:3px;background:var(--gold);color:var(--night);
+  transition:transform .3s cubic-bezier(.2,.7,.2,1),background .3s;
+}
+.btn:hover{transform:translateY(-2px);background:var(--gold-lt)}
+.btn--ghost{background:transparent;color:var(--cream);border:1px solid rgba(241,232,216,.4)}
+.btn--ghost:hover{background:var(--cream);color:var(--night);border-color:var(--cream)}
+/* Il numero nella testata resta bordato e non pieno: il colore pieno in pagina
+   è uno solo e sta sul tasto che porta i soldi (regola 33), cioè «Chiama e
+   prenota» nell'apertura e la barra in basso. Qui tutto oro — bordo, numero,
+   cornetta — più un alone appena accennato, così risalta senza diventare un
+   secondo tasto pieno. Passandoci sopra si riempie. */
+#hdr .btn--ghost{
+  /* oro un po' più chiaro dell'accento: misurato sui pixel, sul telefono il
+     numero in --gold-lt stava a 4,0 di contrasto e sotto i 4,5 si fatica */
+  color:#F2C48B;border-color:rgba(230,175,118,.66);
+  box-shadow:0 0 16px rgba(224,162,99,.14), inset 0 0 12px rgba(224,162,99,.06);
+  text-shadow:0 1px 2px rgba(0,0,0,.8);
+}
+#hdr .btn--ghost:hover{background:var(--gold);border-color:var(--gold);color:var(--night);text-shadow:none;box-shadow:none}
+/* Sul telefono il tasto si stringe per lasciare al nome la riga intera: sotto
+   i 560px erano 201px di nome contro 178 disponibili. */
+@media(max-width:560px){
+  .nav{gap:12px}
+  #hdr .btn{padding:11px 15px;font-size:13px;gap:7px}
+}
+.btn svg{width:15px;height:15px;fill:currentColor}
+/* il pin della mappa è disegnato a contorno come le icone dei contatti:
+   riempito diventa una macchia bianca dentro al tasto */
+.btn svg.contorno{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round;width:16px;height:16px}
+
+/* ---------- APERTURA: la sala a tutto schermo, insegna vera al centro -------
+   La foto di partenza era larga 1160 px: per riempire lo schermo e' stata
+   ingrandita nel FILE (Lanczos in due passi + nitidezza leggera, mai
+   contrasto forzato, regola 4), non lasciata gonfiare al browser, che fa
+   un salto solo e piu' grezzo. Sul telefono arriva il taglio verticale
+   (regola 26): una foto orizzontale su uno schermo in piedi verrebbe
+   ingrandita per forza.
+   Resta un ingrandimento, e da vicino si vede: quando arrivano le foto vere
+   dell'osteria si sostituiscono i due file e basta, le misure vanno gia' bene.
+   min-height e non height: su schermi molto bassi l'apertura cresce invece
+   di tagliare il testo. La riga vh sta sopra la svh per gli iPhone vecchi
+   (regola 29). */
+.hero{
+  position:relative;min-height:100vh;min-height:100svh;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.hero-foto{position:absolute;inset:0;z-index:0;display:block}
+.hero-bg{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:50% 48%;filter:brightness(.86) saturate(1.04) contrast(1.02);
+}
+/* velo: z-index scritto a mano, se no finisce SOTTO la foto e sopra una foto
+   chiara come questa le scritte si perdono (regola 60). Foto 0, velo 1,
+   testo 2.
+   NOTA: controlla.py qui segnala "testo poco staccato, contrasto 2.3" ed è un
+   falso allarme — lui misura il file della foto NUDO, senza velo né pastiglia.
+   Misurato sui pixel disegnati (390 e 1440) il contrasto vero è 12:1 e 14,5:1
+   per la frase, 6,1:1 e 6,2:1 per l'etichetta — rimisurato il 17/08/2026 dopo
+   aver tolto la vignetta fissa, che scuriva anche questa zona. Prima di alzare
+   ancora il velo, rimisurare sullo scatto, non sul file. */
+.hero-veil{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,
+    rgba(16,12,10,.76) 0%, rgba(16,12,10,.44) 20%,
+    rgba(16,12,10,.62) 44%, rgba(16,12,10,.74) 64%,
+    rgba(16,12,10,.86) 82%, rgba(16,12,10,.99) 100%);
+}
+.hero-content{
+  position:relative;z-index:2;flex:1;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:clamp(92px,12vh,150px) var(--pad) clamp(26px,4vh,54px);
+}
+.hero-marchio{
+  width:min(360px,66vw);margin:0 auto;line-height:0;font-size:0;
+  filter:drop-shadow(0 18px 38px rgba(0,0,0,.8));
+}
+.hero-marchio img{display:block;width:100%;height:auto}
+/* etichetta piccola sopra una foto: dentro una pastiglia scura sfocata, il
+   colore da solo non basta mai (regola 9) */
+.hero-content .eyebrow{
+  justify-content:center;margin:clamp(22px,3.6vh,34px) auto 0;width:fit-content;
+  background:rgba(12,9,7,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  padding:9px 18px;border-radius:100px;
+  /* chiaro, non oro: l'oro sopra una foto non stacca (regola 8). Il rombo
+     davanti resta color legno, che è un segno, non da leggere. */
+  color:#F7F2EA;text-shadow:0 1px 2px rgba(0,0,0,.8);
+}
+/* sopra le foto vince il chiaro, non l'oro, con doppia ombra (regola 8) */
+.hero-claim{
+  max-width:40ch;margin:18px auto 0;color:#F7F2EA;
+  font-size:clamp(16px,1.6vw,20px);font-style:italic;font-family:var(--f-body);
+  text-shadow:0 1px 2px rgba(0,0,0,.85), 0 8px 26px rgba(0,0,0,.7);
+}
+.hero-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:clamp(24px,4vh,34px)}
+.a-capo-largo{display:none}
+@media(min-width:760px){.a-capo-largo{display:inline}}
+.scroll-ind{
+  position:relative;z-index:2;align-self:center;margin-bottom:clamp(20px,3.5vh,34px);
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  font-family:var(--f-display);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-soft);
+}
+.scroll-ind span{width:1px;height:30px;background:linear-gradient(var(--gold),transparent);animation:scrollpulse 1.8s ease-in-out infinite}
+/* sotto i 900 c'è la barra fissa in fondo: senza questo "Scorri" le finisce
+   sotto e si vede solo il filetto. Va dopo la regola qui sopra, se no perde. */
+@media(max-width:900px){
+  .scroll-ind{margin-bottom:calc(72px + env(safe-area-inset-bottom))}
+}
+@keyframes scrollpulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+/* ================= FASCE PIENE ================= */
+/* Respiro delle fasce. Era clamp(56px,9vw,120px): fra la fine di una sezione e
+   il titolo della successiva venivano ~205px su schermo largo, perché i due
+   riempimenti si sommano. Dimezzato il 17/08/2026 su richiesta di Fabio —
+   «quel buco non serve a niente e aumenta solo lo scorrimento». Il confine fra
+   due fasce si vede già dal cambio di colore: non serve il vuoto a dirlo. */
+.fascia{width:100%;padding-block:clamp(30px,3.2vw,46px)}
+.fascia--notte{background:var(--night)}
+.fascia--notte2{background:var(--night-2)}
+.fascia--wine{background:var(--wine)}
+.fascia--wine .eyebrow{color:var(--gold-lt)}
+.fascia--wine .eyebrow::before{background:var(--gold-lt)}
+.fascia--carta{background:var(--paper);color:var(--ink)}
+.fascia--carta.alt{background:var(--paper-2)}
+.fascia--carta .eyebrow,.fascia--carta.alt .eyebrow{color:var(--gold-deep)}
+.fascia--carta .eyebrow::before,.fascia--carta.alt .eyebrow::before{background:var(--gold-deep)}
+.fascia--carta p,.fascia--carta.alt p{color:var(--ink-soft)}
+
+.sec-head-single{max-width:66ch}
+.sec-head-single h2{font-size:clamp(36px,5.6vw,72px);margin-top:14px}
+.sec-head-single p{margin:16px 0 0;color:var(--cream-soft);font-size:clamp(15px,1.1vw,17px)}
+/* Sulla carta chiara il testo chiaro sparisce: la riga sotto al titolo del
+   menù era invisibile. Le due regole hanno la stessa forza e vinceva quella
+   scritta dopo, quindi qui si rimette scuro, dopo. */
+.fascia--carta .sec-head-single p,
+.fascia--carta.alt .sec-head-single p{color:var(--ink-soft)}
+
+/* ---------- fascia numeri ---------- */
+.numeri-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(22px,4vw,40px);text-align:center}
+@media(max-width:700px){.numeri-grid{grid-template-columns:repeat(2,1fr);gap:30px 20px}}
+.num b{display:block;font-family:var(--f-display);font-size:clamp(34px,4.4vw,54px);line-height:1;font-weight:700;color:var(--gold)}
+.num span{display:block;margin-top:8px;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-soft)}
+
+/* ---------- MENÙ: fasce orizzontali, una categoria per fascia ---------- */
+/* Il menù è fatto di quattro fasce dello stesso colore incollate una
+   sull'altra: i due riempimenti si sommano e fra la riga d'introduzione e
+   «Antipasti» restavano 240 px di niente. Il vuoto si toglie da dove ce n'era
+   troppo, non si sposta altrove (regola 89): il titolo e la prima categoria
+   diventano un blocco unico, le categorie fra loro respirano la metà. */
+#menu .fascia{padding-block:clamp(24px,2.6vw,36px)}
+#menu>.fascia:first-child{padding-top:clamp(26px,3vw,42px);padding-bottom:0}
+#menu>.fascia:first-child+.fascia{padding-top:clamp(20px,2.6vw,36px)}
+/* Il blocco del titolo è anche lui una .wrap, e su di lui la larghezza da 66ch
+   vinceva su quella della griglia: con `margin:0 auto` si centrava, così «Il
+   menù di agosto» partiva rientrato e «Antipasti» no. Ora il blocco tiene la
+   larghezza della griglia e la misura di lettura resta sul paragrafo, come nei
+   contatti. Da vicino il salto non si vedeva, con meno vuoto sì. */
+#menu .sec-head-single{max-width:var(--maxw)}
+#menu .sec-head-single>p{max-width:60ch}
+.fm-inner{display:grid;grid-template-columns:minmax(150px,260px) 1fr;gap:clamp(20px,4vw,56px);align-items:start}
+@media(max-width:820px){.fm-inner{grid-template-columns:1fr;gap:20px}}
+.fm-cat{font-size:clamp(32px,4.6vw,58px);color:var(--ink)}
+.fm-piatti{display:flex;flex-direction:column}
+.piatto{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:15px 0;border-bottom:1px dotted rgba(36,26,18,.25)}
+.piatto:last-child{border-bottom:0}
+.piatto-testo b{font-weight:600;font-size:16px;font-family:var(--f-body)}
+.piatto-testo small{display:block;color:var(--ink-soft);font-size:12.5px;line-height:1.4;margin-top:3px;font-style:italic}
+.prezzo{flex:none;font-family:var(--f-display);font-size:19px;color:var(--gold-deep);font-weight:700;white-space:nowrap}
+
+/* ---------- GALLERIA: striscia orizzontale scorrevole ---------- */
+/* Stesso disallineamento del menù: il titolo si centrava e le foto partivano
+   dal bordo dello schermo. Ora il titolo sta sul bordo della griglia e la
+   prima foto comincia sotto di lui — la striscia continua a sbordare a destra,
+   che è il segnale che si scorre. Su schermo stretto si ferma al bordo pagina.
+   Il conto va fatto con 100% e non con 100vw: 100vw conta anche la barra di
+   scorrimento e la prima foto restava fuori di 7 px dal titolo. */
+#galleria .sec-head-single{max-width:var(--maxw)}
+#galleria .sec-head-single>p{max-width:60ch}
+.gal-strip{
+  /* il bordo da cui parte la striscia: sul bordo della griglia se lo schermo è
+     largo, sul bordo pagina se è stretto */
+  --bordo:max(var(--pad), calc((100% - var(--maxw))/2 + var(--pad)));
+  display:flex;gap:clamp(10px,1.4vw,18px);overflow-x:auto;scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;padding:6px var(--pad) 16px;margin-top:clamp(20px,2.2vw,32px);
+  padding-left:var(--bordo);
+  /* senza questo lo scatto (scroll-snap) incolla la prima foto al bordo dello
+     schermo scavalcando il riempimento: si apriva già scorsa, con la prima
+     foto tagliata. Anche prima, quando il riempimento era 80 px. */
+  scroll-padding-left:var(--bordo);
+}
+.gal-strip::-webkit-scrollbar{height:6px}
+.gal-strip::-webkit-scrollbar-track{background:transparent}
+.gal-strip::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px}
+/* riquadro orizzontale perche' le foto dei piatti lo sono (regola 61), e
+   largo al massimo 300 px perche' i file arrivano a ~500: piu' grandi di
+   cosi' il browser dovrebbe gonfiarli */
+.g-item{flex:0 0 auto;width:clamp(228px,30vw,300px);aspect-ratio:4/3;border-radius:3px;overflow:hidden;scroll-snap-align:start;position:relative}
+.g-item figcaption{
+  position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px 14px 11px;
+  font-family:var(--f-display);font-size:12.5px;font-weight:600;letter-spacing:.05em;
+  text-transform:uppercase;color:#FBF7F1;text-align:left;
+  text-shadow:0 1px 2px rgba(0,0,0,.9), 0 6px 18px rgba(0,0,0,.75);
+  background:linear-gradient(180deg,rgba(12,9,7,0) 0%,rgba(12,9,7,.82) 62%,rgba(12,9,7,.94) 100%);
+}
+.g-item figure{margin:0;height:100%}
+
+/* ---------- STORIA: foto piena larghezza con parallasse e testo sovrapposto ---------- */
+.fascia--parallax{
+  position:relative;min-height:clamp(520px,78vh,820px);
+  background-size:cover;background-position:center;background-attachment:fixed;
+  display:flex;align-items:flex-end;color:var(--cream);overflow:hidden;
+}
+@media(max-width:900px){.fascia--parallax{background-attachment:scroll;align-items:center}}
+.storia-veil{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg, rgba(14,11,9,.12) 0%, rgba(14,11,9,.58) 55%, rgba(14,11,9,.9) 100%)}
+.storia-content{position:relative;z-index:2;max-width:640px;padding-block:clamp(40px,7vw,84px)}
+.storia-content h2{font-size:clamp(34px,5vw,64px);margin:14px 0 22px}
+.storia-content p{color:var(--cream-soft);margin:0 0 16px}
+
+/* ---------- "In pratica": le quattro cose che uno cerca davvero ----------
+   Sta al posto del vuoto che restava sotto agli orari (regola 70): non una
+   frase messa li' a tappare, ma le informazioni che servono per venire. */
+.pratica{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(212px,1fr));gap:1px;
+  margin-top:clamp(22px,2.6vw,34px);background:var(--line);border:1px solid var(--line);
+}
+.pratica > div{background:var(--night-2);padding:24px 22px}
+.pratica b{
+  display:block;font-family:var(--f-display);font-size:12px;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:9px;
+}
+.pratica span{display:block;color:var(--cream-soft);font-size:15px;line-height:1.62}
+/* la stella e il numero delle recensioni, sulla fascia bruna */
+.voto-big{display:flex;align-items:baseline;justify-content:center;gap:10px;margin-top:6px}
+.voto-stelle{color:var(--gold-lt);letter-spacing:5px;font-size:clamp(17px,2.4vw,23px)}
+.voto-link{display:inline-flex;margin-top:26px}
+.firma{font-family:var(--f-body);font-style:italic;font-size:23px;margin-top:24px;color:var(--gold)}
+.firma small{display:block;font-family:var(--f-display);font-style:normal;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-soft);margin-top:6px}
+
+/* ---------- RECENSIONI: una citazione grande alla volta ---------- */
+.rec-seq{margin-top:8px}
+.rec-full{max-width:820px;margin:0 auto;padding-block:clamp(24px,3.4vw,42px);border-top:1px solid rgba(241,232,216,.16);text-align:center}
+.rec-full:first-child{border-top:0;padding-top:clamp(6px,2vw,18px)}
+.rec-full .stelle{color:var(--gold-lt);letter-spacing:4px;font-size:14px}
+.rec-full q{display:block;font-family:var(--f-body);font-size:clamp(22px,3.4vw,36px);font-style:italic;line-height:1.42;margin:20px auto 20px;quotes:none;color:var(--cream);max-width:36ch}
+.rec-full cite{font-style:normal;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-soft);font-family:var(--f-display)}
+
+/* ---------- CONTATTI ---------- */
+.contatti-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,70px);margin-top:14px}
+@media(max-width:820px){.contatti-grid{grid-template-columns:1fr;gap:36px}}
+.orari{width:100%;border-collapse:collapse;margin-top:8px}
+.orari td{padding:12px 0;border-bottom:1px dotted var(--line);font-size:15px;font-family:var(--f-body)}
+.orari td:last-child{text-align:right;font-variant-numeric:tabular-nums;color:var(--cream-soft)}
+.orari tr.oggi td{color:var(--gold);font-weight:600}
+.info-riga{display:flex;gap:14px;padding:15px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.info-riga svg{width:17px;height:17px;fill:none;stroke:var(--gold);stroke-width:1.6;flex:none;margin-top:3px}
+.info-riga b{display:block;font-family:var(--f-display);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cream-soft);font-weight:600;margin-bottom:2px}
+
+/* ---------- footer ---------- */
+footer{background:#0C0907;color:rgba(241,232,216,.55);padding:clamp(28px,3vw,44px) 0 130px;font-size:13px}
+.f-top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-end;padding-bottom:26px;border-bottom:1px solid rgba(241,232,216,.14)}
+.f-top .brand{color:var(--cream)}
+.f-social{display:flex;gap:18px}
+.f-social a{color:var(--cream);font-family:var(--f-display);font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;transition:opacity .3s}
+.f-social a:hover{opacity:1;color:var(--gold-lt)}
+.f-bot{padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11.5px;letter-spacing:.04em}
+.nota-bozza{margin:18px 0 0;font-size:10.5px;line-height:1.6;color:inherit;opacity:.5;max-width:80ch;letter-spacing:.02em}
+/* la riga che dice che le tre recensioni sono esempi: si toglie insieme a loro */
+.rec-nota{
+  text-align:center;margin:30px auto 0;max-width:46ch;padding:10px 18px;
+  font-size:13.5px;font-style:italic;color:rgba(240,234,225,.88);
+  border:1px dashed rgba(240,234,225,.28);border-radius:2px;
+}
+
+/* ---------- barra fissa mobile ---------- */
+.cta-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:200;display:none;gap:1px;
+  background:rgba(19,14,11,.2);-webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.cta-bar a{
+  flex:1;display:flex;align-items:center;justify-content:center;gap:9px;
+  padding:13px 8px;font-family:var(--f-display);font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  background:var(--night-2);color:var(--cream);
+}
+.cta-bar a.chiama{background:var(--gold);color:var(--night)}
+.cta-bar svg{width:16px;height:16px;fill:currentColor}
+@media(max-width:900px){.cta-bar{display:flex}}
+@media(min-width:901px){footer{padding-bottom:clamp(28px,3vw,44px)}}
+
+/* ---------- movimento ridotto: disattiva reveal, pulsazione scroll-indicator e parallasse ---------- */
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .scroll-ind span{animation:none;opacity:.6}
+  .fascia--parallax{background-attachment:scroll}
+}
+
+/* ---- come vanno a capo le frasi ----------------------------------------
+   balance: le righe di un titolo vengono distribuite in parti uguali, così
+   non resta mai una parola sola in fondo.
+   pretty: nei testi lunghi evita di lasciare appesa a fine riga una parolina
+   (il, la, di, che) e di mandare a capo una parola da sola.
+   I browser che non le conoscono le ignorano e basta: nessun rischio. */
+h1, h2, h3{ text-wrap:balance; }
+p, li, figcaption, blockquote{ text-wrap:pretty; }
+</style>
+<!--
+  Dati strutturati (schema.org / JSON-LD): servono a far capire a Google orari,
+  indirizzo, telefono e tipo di attività, così nei risultati di ricerca può comparire
+  la scheda con queste informazioni. Quando si personalizza il sito per un cliente
+  vero, questi dati vanno aggiornati insieme a quelli visibili in pagina (nome,
+  indirizzo, telefono, orari): se non coincidono, Google penalizza.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Osteria Marco Polo",
+  "description": "Osteria ad Alassio, in via Garibaldi 27, dal 1985. Cucina di mare e di terra, menù che cambia ogni mese.",
+  "url": "https://fabiuz9494.github.io/osteria-marco-polo/",
+  "image": "https://fabiuz9494.github.io/osteria-marco-polo/img/og.jpg",
+  "telephone": "+390182642082",
+  "servesCuisine": "Italiana",
+  "priceRange": "18–22 € a portata",
+  "hasMenu": "https://fabiuz9494.github.io/osteria-marco-polo/#menu",
+  "acceptsReservations": "https://fabiuz9494.github.io/osteria-marco-polo/#contatti",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Giuseppe Garibaldi 27",
+    "postalCode": "17021",
+    "addressLocality": "Alassio",
+    "addressRegion": "SV",
+    "addressCountry": "IT"
+  },
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Tavoli all'aperto", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Seggioloni per bambini", "value": true}
+  ],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "19:00", "closes": "22:00"}
+  ]
+}
+</script>
+<!-- Il voto di Google (4,5 su 555) NON sta nei dati qui sopra di proposito: un
+     voto che il sito si dà da solo Google non lo mostra, e può contare come
+     segnale storto. In pagina si legge, ma detto per quello che è: viene da
+     Google, con il link per andare a verificarlo. -->
+</head>
+
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand">Osteria Marco Polo<small>Alassio · dal 1985</small></a>
+    <nav class="nav-links">
+      <a href="#menu">Menù</a>
+      <a href="#galleria">I piatti</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#contatti">Dove siamo</a>
+    </nav>
+    <a href="#" class="btn btn--ghost js-tel">
+      <svg viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.7 2.8c.1.6-.1 1.2-.6 1.5l-1.3.9a12 12 0 0 0 5.8 5.8l.9-1.3c.3-.5.9-.7 1.5-.6l2.8.7c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
+      0182 642082
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== APERTURA: la sala a tutto schermo
+     La foto è la sala dell'osteria. L'insegna è il loro file, non ridisegnata
+     (regola 62): è quella appesa fuori, cornice di legno compresa.
+     Due file: orizzontale per il computer, verticale per il telefono. -->
+<section class="hero" id="top">
+  <picture class="hero-foto">
+    <source media="(max-width:759px)" srcset="img/sala-vert.jpg" width="1000" height="1335">
+    <img src="img/sala.jpg" alt="La sala dell'Osteria Marco Polo: soffitto in canne, lampade nere e tavoli apparecchiati fino alla veranda" class="hero-bg" width="1800" height="1012" loading="eager" fetchpriority="high">
+  </picture>
+  <div class="hero-veil"></div>
+  <div class="hero-content">
+    <!-- il titolo della pagina è l'insegna vera: il nome sta nell'alt, che è
+         quello che leggono Google e chi non vede le immagini -->
+    <h1 class="hero-marchio"><img src="img/insegna.png" alt="Osteria Marco Polo" width="624" height="420"></h1>
+    <!-- corta apposta: dentro la pastiglia, sul telefono, l'indirizzo intero
+         andava a capo e la pastiglia diventava una barra. L'indirizzo sta
+         nella scheda dei contatti e nei dati per Google. -->
+    <p class="eyebrow rv">Alassio&nbsp;·&nbsp;dal&nbsp;1985</p>
+    <!-- MODIFICA QUI — questa frase dice solo cose che stanno nel loro menù e
+         nel loro indirizzo. Al posto suo ci vanno le parole del titolare:
+         com'è nata l'osteria, cosa cucinano, chi c'è in cucina e in sala. -->
+    <!-- il <br> si accende solo da 760px in su: lì senza, la seconda frase
+         cominciava a fine riga con "Nella" appeso (regola 71). Lo spazio
+         prima del <br> serve per quando è nascosto (regola 76). -->
+    <p class="hero-claim rv" style="transition-delay:.08s">Cucina di&nbsp;mare e&nbsp;di&nbsp;terra nel&nbsp;centro di&nbsp;Alassio. <br class="a-capo-largo">Nella carta di&nbsp;agosto: le&nbsp;trofie al&nbsp;pesto con&nbsp;basilico di&nbsp;Prà,&nbsp;il&nbsp;fritto di&nbsp;calamari, il&nbsp;branzino&nbsp;al&nbsp;forno.</p>
+    <div class="hero-cta rv" style="transition-delay:.16s">
+      <a href="#" class="btn js-tel">
+        <svg viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.7 2.8c.1.6-.1 1.2-.6 1.5l-1.3.9a12 12 0 0 0 5.8 5.8l.9-1.3c.3-.5.9-.7 1.5-.6l2.8.7c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
+        Chiama e&nbsp;prenota&nbsp;il&nbsp;tavolo
+      </a>
+      <a href="#menu" class="btn btn--ghost">Guarda il menù</a>
+    </div>
+  </div>
+  <!-- ora che l'apertura riempie lo schermo, serve dire che sotto c'è altro -->
+  <a href="#numeri" class="scroll-ind" aria-label="Scorri per continuare"><span></span>Scorri</a>
+</section>
+
+<!-- ===================== FASCIA NUMERI ===================== -->
+<section id="numeri" class="fascia fascia--notte2">
+  <div class="wrap numeri-grid">
+    <div class="num rv"><b>1985</b><span>l'anno dell'insegna</span></div>
+    <div class="num rv" style="transition-delay:.06s"><b>4,5</b><span>su Google</span></div>
+    <div class="num rv" style="transition-delay:.12s"><b>555</b><span>recensioni</span></div>
+    <div class="num rv" style="transition-delay:.18s"><b>6</b><span>sere su sette</span></div>
+  </div>
+</section>
+
+<!-- ===================== MENÙ — fasce orizzontali, una categoria per fascia ===================== -->
+<section id="menu">
+  <div class="fascia fascia--carta">
+    <div class="wrap sec-head-single rv">
+      <p class="eyebrow">La carta</p>
+      <h2>Il menù di agosto</h2>
+      <!-- Le portate e i prezzi qui sotto sono copiati parola per parola dal
+           menù di agosto dell'osteria. Quando cambia il mese cambia la carta:
+           si sostituiscono le righe, la struttura resta questa. -->
+      <p>Antipasti, primi e&nbsp;secondi della carta di&nbsp;questo mese. Da&nbsp;18 a&nbsp;22&nbsp;euro&nbsp;a&nbsp;portata.</p>
+    </div>
+  </div>
+
+  <!-- La comparsa (rv) sta sul contenuto, NON sulla fascia: una fascia che
+       scivola su di 26px lascia scoperta la striscia di sfondo del corpo, e
+       scorrendo si vedeva una riga nera fra il titolo e gli antipasti che si
+       richiudeva. Vale per tutte e tre le categorie. -->
+  <div class="fascia fascia--carta">
+    <div class="wrap fm-inner rv">
+      <h3 class="fm-cat">Antipasti</h3>
+      <div class="fm-piatti">
+        <div class="piatto"><div class="piatto-testo"><b>Flan di zucchine e menta</b><small>Crema di&nbsp;ricotta, zest di&nbsp;limone e&nbsp;granella&nbsp;di&nbsp;pistacchio</small></div><span class="prezzo">18 €</span></div>
+        <div class="piatto"><div class="piatto-testo"><b>Tartare di fassona</b><small>Salsa di&nbsp;pomodoro San&nbsp;Marzano, cremoso di&nbsp;burrata e&nbsp;crunch&nbsp;di&nbsp;focaccia</small></div><span class="prezzo">18 €</span></div>
+        <div class="piatto"><div class="piatto-testo"><b>Insalata di polpo</b><small>Trombette d'Albenga, pomodoro cuore di&nbsp;bue&nbsp;e&nbsp;olive taggiasche, riduzione di&nbsp;pesche e&nbsp;pinoli&nbsp;tostati</small></div><span class="prezzo">20 €</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fascia fascia--carta alt">
+    <div class="wrap fm-inner rv">
+      <h3 class="fm-cat">Primi piatti</h3>
+      <div class="fm-piatti">
+        <div class="piatto"><div class="piatto-testo"><b>Trofie al&nbsp;pesto della&nbsp;casa</b><small>Con basilico di Prà</small></div><span class="prezzo">18 €</span></div>
+        <div class="piatto"><div class="piatto-testo"><b>Gnocchi di patate</b><small>Cremoso al&nbsp;pecorino, riduzione di&nbsp;pesche e&nbsp;frutto della&nbsp;passione</small></div><span class="prezzo">18 €</span></div>
+        <div class="piatto"><div class="piatto-testo"><b>Scialatielli mantecati</b><small>Crema al&nbsp;curry, cognac, lime, gambero rosso e&nbsp;scaglie&nbsp;di&nbsp;mandorle</small></div><span class="prezzo">20 €</span></div>
+        <div class="piatto"><div class="piatto-testo"><b>Risotto ai&nbsp;frutti&nbsp;di&nbsp;mare</b><small>Crema di&nbsp;datterini rossi, salsa al&nbsp;limone e&nbsp;olio&nbsp;al&nbsp;basilico</small></div><span class="prezzo">20 €</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fascia fascia--carta">
+    <div class="wrap fm-inner rv">
+      <h3 class="fm-cat">Secondi piatti</h3>
+      <div class="fm-piatti">
+        <div class="piatto"><div class="piatto-testo"><b>Tortino di&nbsp;pasta fillo ripieno&nbsp;di&nbsp;ricotta</b><small>Crema di&nbsp;datterini gialli e&nbsp;zucchine alla&nbsp;scapece</small></div><span class="prezzo">18 €</span></div>
+        <div class="piatto"><div class="piatto-testo"><b>Sovracoscia di&nbsp;pollo in&nbsp;glassa di&nbsp;soia&nbsp;e&nbsp;miele</b><small>Peperoni, crema di&nbsp;avocado e&nbsp;sesamo&nbsp;tostato</small></div><span class="prezzo">18 €</span></div>
+        <div class="piatto"><div class="piatto-testo"><b>Branzino al forno</b><small>Patata schiacciata, julienne di&nbsp;trombette&nbsp;e&nbsp;pesto</small></div><span class="prezzo">20 €</span></div>
+        <div class="piatto"><div class="piatto-testo"><b>Il «nostro» fritto misto</b></div><span class="prezzo">22 €</span></div>
+        <div class="piatto"><div class="piatto-testo"><b>Fritto di calamari</b></div><span class="prezzo">22 €</span></div>
+        <div class="piatto"><div class="piatto-testo"><b>Acciughe fritte</b></div><span class="prezzo">22 €</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODIFICA QUI — DOLCI, VINI, COPERTO, MENÙ FISSO: non sono sulla carta di
+       agosto che abbiamo, quindi restano fuori. Serve chiederli al titolare:
+       i dolci (nome e prezzo), la carta dei vini, il coperto, se c'è un menù
+       a pranzo. La fascia si aggiunge copiando una di quelle qui sopra. -->
+</section>
+
+<!-- ===================== I PIATTI — striscia orizzontale scorrevole =====================
+     Le foto sono ritagli degli scatti che stanno sulla scheda Google
+     dell'osteria: bastano per far vedere il sito al titolare, non per il sito
+     vero. Prima di andare online servono le foto grandi (le sue o quelle di
+     Fabio): queste arrivano a ~500 px di lato e sopra i 300 px di riquadro
+     comincerebbero a sgranare. Le didascalie dicono solo quello che si vede. -->
+<section id="galleria" class="fascia fascia--notte">
+  <div class="wrap sec-head-single rv">
+    <p class="eyebrow">Un assaggio</p>
+    <h2>I piatti</h2>
+    <p>Qualche piatto della carta, come arriva in&nbsp;tavola. Scorri per&nbsp;vederli&nbsp;tutti.</p>
+  </div>
+
+  <div class="gal-strip">
+    <div class="g-item rv"><figure><img src="img/p3.jpg" alt="Piatto di trofie al pesto con una foglia di basilico" class="foto" loading="lazy"><figcaption>Trofie al&nbsp;pesto della&nbsp;casa</figcaption></figure></div>
+    <div class="g-item rv" style="transition-delay:.06s"><figure><img src="img/p1.jpg" alt="Gnocchi con gamberoni in una salsa rosata" class="foto" loading="lazy"><figcaption>Gnocchi con&nbsp;gamberoni</figcaption></figure></div>
+    <div class="g-item rv" style="transition-delay:.12s"><figure><img src="img/p2.jpg" alt="Ravioli adagiati su una crema arancione, con granella croccante e dadini di zucchina" class="foto" loading="lazy"><figcaption>Ravioli su&nbsp;crema&nbsp;di&nbsp;verdure</figcaption></figure></div>
+    <div class="g-item rv" style="transition-delay:.18s"><figure><img src="img/p5.jpg" alt="Fritto di calamari dorato con uno spicchio di limone" class="foto" loading="lazy"><figcaption>Fritto di calamari</figcaption></figure></div>
+    <div class="g-item rv" style="transition-delay:.24s"><figure><img src="img/p7.jpg" alt="Fritto di mare servito su una lastra di ardesia, con limone e patatine" class="foto" loading="lazy"><figcaption>Il fritto di&nbsp;mare</figcaption></figure></div>
+    <div class="g-item rv" style="transition-delay:.30s"><figure><img src="img/p6.jpg" alt="Rollatina di carne a fette su una purea, con timo fresco" class="foto" loading="lazy"><figcaption>Rollatina su&nbsp;purea</figcaption></figure></div>
+    <div class="g-item rv" style="transition-delay:.36s"><figure><img src="img/p4.jpg" alt="Dolce al piatto con decoro al cioccolato" class="foto" loading="lazy"><figcaption>Il dolce, al piatto</figcaption></figure></div>
+  </div>
+</section>
+
+<!-- MODIFICA QUI — LA STORIA. Qui andrebbe la sezione «dal 1985»: chi ha
+     aperto l'osteria, chi c'è in cucina oggi, perché si chiama Marco Polo.
+     Non c'è niente di scritto da nessuna parte e non si inventa: la sezione
+     resta fuori finché il titolare non la racconta. Va bene anche a voce. -->
+
+<!-- ===================== RECENSIONI ===================== -->
+<section id="recensioni" class="fascia fascia--wine">
+  <div class="wrap">
+    <div class="sec-head-single rv" style="margin-inline:auto;text-align:center">
+      <p class="eyebrow" style="justify-content:center">Dicono di noi</p>
+      <div class="voto-big"><h2 style="margin:0">4,5</h2><span class="voto-stelle">★★★★★</span></div>
+      <p>Il&nbsp;voto dell'osteria su&nbsp;Google,&nbsp;su&nbsp;555&nbsp;recensioni.</p>
+      <a class="btn btn--ghost voto-link" href="https://www.google.com/maps/search/?api=1&amp;query=Osteria%20Marco%20Polo%20Alassio" target="_blank" rel="noopener">Leggile su Google</a>
+    </div>
+
+    <!-- MODIFICA QUI — LE TRE RECENSIONI. Quelle qui sotto sono scritte da noi
+         per far vedere come vengono: NON sono di clienti veri, e la riga
+         «tre esempi» sopra lo dice a chi legge. Appena si scelgono tre
+         recensioni vere fra le 555 di Google (testo e nome come li mostra
+         Google), si sostituiscono e si toglie quella riga. -->
+    <p class="rec-nota rv">Tre&nbsp;esempi, per&nbsp;far&nbsp;vedere come si&nbsp;vedranno le&nbsp;recensioni&nbsp;vere.</p>
+    <div class="rec-seq">
+      <div class="rec-full rv">
+        <div class="stelle">★★★★★</div>
+        <q>Trofie al&nbsp;pesto come si&nbsp;deve e&nbsp;un&nbsp;fritto leggerissimo. Ci&nbsp;siamo seduti fuori e&nbsp;non&nbsp;ci&nbsp;hanno messo fretta per&nbsp;tutta&nbsp;la&nbsp;sera.</q>
+        <cite>Esempio</cite>
+      </div>
+      <div class="rec-full rv" style="transition-delay:.08s">
+        <div class="stelle">★★★★★</div>
+        <q>Siamo capitati per&nbsp;caso mentre giravamo in&nbsp;centro. Menù corto, tutto fresco, prezzi chiari: siamo tornati la&nbsp;sera&nbsp;dopo.</q>
+        <cite>Esempio</cite>
+      </div>
+      <div class="rec-full rv" style="transition-delay:.16s">
+        <div class="stelle">★★★★★</div>
+        <q>Con&nbsp;i&nbsp;bambini ci&nbsp;hanno fatto posto subito e&nbsp;il&nbsp;seggiolone era&nbsp;già&nbsp;pronto. Il&nbsp;branzino al&nbsp;forno vale&nbsp;il&nbsp;viaggio.</q>
+        <cite>Esempio</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTATTI ===================== -->
+<section id="contatti" class="fascia fascia--notte2">
+  <div class="wrap">
+    <div class="sec-head-single rv">
+      <p class="eyebrow">Dove siamo</p>
+      <h2>Vieni a trovarci</h2>
+      <p>Siamo in&nbsp;via&nbsp;Giuseppe Garibaldi&nbsp;27, nel&nbsp;centro di&nbsp;Alassio. Il&nbsp;tavolo si&nbsp;prenota al&nbsp;telefono: rispondiamo&nbsp;noi.</p>
+    </div>
+
+    <div class="contatti-grid">
+      <div class="rv">
+        <table class="orari">
+          <tr><td>Lunedì</td><td>Chiuso</td></tr>
+          <tr><td>Martedì</td><td>19:00 — 22:00</td></tr>
+          <tr><td>Mercoledì</td><td>19:00 — 22:00</td></tr>
+          <tr><td>Giovedì</td><td>19:00 — 22:00</td></tr>
+          <tr><td>Venerdì</td><td>19:00 — 22:00</td></tr>
+          <tr><td>Sabato</td><td>19:00 — 22:00</td></tr>
+          <tr><td>Domenica</td><td>19:00 — 22:00</td></tr>
+        </table>
+      </div>
+
+      <div class="rv" style="transition-delay:.1s">
+        <div class="info-riga">
+          <svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <div><b>Indirizzo</b>Via&nbsp;Giuseppe Garibaldi&nbsp;27<br>17021 Alassio&nbsp;(SV)</div>
+        </div>
+        <div class="info-riga">
+          <svg viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.7 2.8c.1.6-.1 1.2-.6 1.5l-1.3.9a12 12 0 0 0 5.8 5.8l.9-1.3c.3-.5.9-.7 1.5-.6l2.8.7c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
+          <div><b>Telefono</b><a href="#" class="js-tel">0182 642082</a></div>
+        </div>
+        <!-- MODIFICA QUI — mail, Instagram e Facebook dell'osteria: non li
+             abbiamo, quindi le righe restano fuori. Si aggiungono copiando
+             una riga qui sopra e cambiando icona e testo. -->
+
+        <!-- La mappa vera (l'iframe di Google) si mette quando il titolare dà
+             l'ok: intanto il tasto porta alle indicazioni, che è quello che
+             uno cerca davvero da fuori casa. -->
+        <a class="btn btn--ghost" style="margin-top:22px" href="https://www.google.com/maps/search/?api=1&amp;query=Via%20Giuseppe%20Garibaldi%2027%2C%2017021%20Alassio%20SV" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="contorno"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          Apri le indicazioni
+        </a>
+      </div>
+    </div>
+
+    <div class="pratica rv">
+      <div><b>Si prenota</b><span>Al&nbsp;telefono, allo 0182 642082, negli orari&nbsp;di&nbsp;apertura.</span></div>
+      <div><b>In sala e fuori</b><span>Tavoli all'aperto, Wi-Fi e&nbsp;seggioloni per&nbsp;i&nbsp;bambini.</span></div>
+      <div><b>Come arrivare</b><span>Siamo nel&nbsp;centro di&nbsp;Alassio: il&nbsp;tasto qui&nbsp;sopra apre le&nbsp;indicazioni.</span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <a href="#top" class="brand">Osteria Marco Polo<small>Alassio · dal 1985</small></a>
+      <div class="f-social">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Osteria%20Marco%20Polo%20Alassio" target="_blank" rel="noopener">Google</a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>Osteria Marco Polo ·&nbsp;Via&nbsp;Giuseppe Garibaldi 27, 17021 Alassio (SV)&nbsp;·&nbsp;0182&nbsp;642082</span>
+      <!-- MODIFICA QUI — ragione sociale e partita IVA dell'osteria, da chiedere
+           al titolare: vanno scritte qui, in fondo, come su tutti i siti. -->
+    </div>
+    <p class="nota-bozza">Bozza fatta da&nbsp;Insegna per&nbsp;far&nbsp;vedere al&nbsp;titolare come può&nbsp;essere il&nbsp;sito dell'osteria. Le&nbsp;foto sono ritagli dalla scheda Google e&nbsp;vanno sostituite con&nbsp;quelle vere; i&nbsp;piatti, i&nbsp;prezzi, gli&nbsp;orari e&nbsp;il&nbsp;numero sono quelli pubblici&nbsp;dell'osteria.</p>
+  </div>
+</footer>
+
+<div class="cta-bar">
+  <a href="#" class="chiama js-tel">
+    <svg viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.7 2.8c.1.6-.1 1.2-.6 1.5l-1.3.9a12 12 0 0 0 5.8 5.8l.9-1.3c.3-.5.9-.7 1.5-.6l2.8.7c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
+    Chiama e prenota
+  </a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Via%20Giuseppe%20Garibaldi%2027%2C%2017021%20Alassio%20SV" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+    Indicazioni
+  </a>
+</div>
+
+<script>
+/* ============ 2. PERSONALIZZA I DATI DEL CLIENTE QUI ============ */
+const CFG = {
+  whatsapp: "",                       // l'osteria ha solo il fisso: niente WhatsApp
+  telefono: "+390182642082",          // il numero della scheda Google
+  messaggio: ""
+};
+/* =============================================================== */
+
+// --- il tasto che chiama ---
+// L'osteria ha solo il fisso, quindi qui non c'e' niente da fare con
+// WhatsApp: se un giorno arriva un numero di cellulare, si rimette
+// whatsapp in CFG e si riaggancia ai tasti come sugli altri siti.
+document.querySelectorAll('.js-tel').forEach(a=>{
+  a.href = "tel:" + CFG.telefono.replace(/\s/g,'');
+});
+
+// --- header che si "attacca" allo scroll ---
+const hdr = document.getElementById('hdr');
+addEventListener('scroll', ()=> hdr.classList.toggle('stuck', scrollY > 30), {passive:true});
+
+// --- reveal on scroll ---
+const io = new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.12, rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// --- evidenzia il giorno di oggi nella tabella orari ---
+const righe = document.querySelectorAll('.orari tr');
+const idx = (new Date().getDay() + 6) % 7;   // 0 = lunedì
+if(righe[idx]) righe[idx].classList.add('oggi');
+
+</script>
+</body>
+</html>
